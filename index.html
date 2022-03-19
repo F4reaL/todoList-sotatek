@@ -21,19 +21,19 @@
             </div>
             <div class="container">
                 <div class="details">
-                    <input class="todo__title" type="text" id="i-add" placeholder="Add new task ...">
-                    <div class="message">Vui lòng nhập trường này</div>
+                    <input class="task__title" type="text" id="i-add" placeholder="Add new task ...">
+                    <div class="message"></div>
 
-                    <div class="todo__descipt">
+                    <div class="task__descipt">
                         <label for="">Desciption</label>
-                        <textarea class="todo__descript--text" name="Text1" cols="40" rows="10"></textarea>
+                        <textarea class="task__descript--text" name="Text1" cols="40" rows="10"></textarea>
                     </div>
-                    <div class="todo__infor">
-                        <div class="todo__infor--field">
+                    <div class="task__infor">
+                        <div class="task__infor--field">
                             <label for="">Due Date</label>
                             <input class="dueDate" type="date">
                         </div>
-                        <div class="todo__infor--field">
+                        <div class="task__infor--field">
                             <label for="">Piority</label>
                             <select name="piority" class="piority">
                                 <option value="low">Low</option>
@@ -55,47 +55,44 @@
                 <input type="text" id="i-search" placeholder="Search ...">
                 <div class="list">
                     <div class="list__item">
-                        <input type="checkbox">
-                        <p>Do homeworkhomeworkhomeworkhomeworkhomeworkhomework</p>
-                        <button class="button detail">Detail</button>
-                        <button class="button remove">Remove</button>
+                        <div class="item">
+                            <input type="checkbox">
+                            <p>Do homeworkhomeworkhomeworkhomeworkhomeworkhomework</p>
+                            <button class="button btn-detail">Detail</button>
+                            <button class="button btn-remove">Remove</button>
+                        </div>
+                        <div class="details open">
+                            <input class="todo__title" class="error" type="text" id="i-update" placeholder="Change task ...">
+                            <div class="message"></div>
+                            <div class="todo__descipt">
+                                <label for="">Desciption</label>
+                                <textarea class="todo__descript--text" name="Text1" cols="40" rows="6"></textarea>
+                            </div>
+                            <div class="todo__infor">
+                                <div class="todo__infor--field">
+                                    <label for="">Due Date</label>
+                                    <input type="date">
+                                </div>
+                                <div class="todo__infor--field">
+                                    <label for="">Piority</label>
+                                    <select name="piority" id="">
+                                        <option value="low">Low</option>
+                                        <option value="normal">Normal</option>
+                                        <option value="high">High</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button class="button" id="btn-add">Update</button>
+                        </div>
+                    </div>
 
-                    </div>
-                    <div class="details open">
-                        <input class="todo__title" class="error" type="text" id="i-update" placeholder="Change task ...">
-                        <div class="message">Vui lòng nhập trường này</div>
-                        <div class="todo__descipt">
-                            <label for="">Desciption</label>
-                            <textarea class="todo__descript--text" name="Text1" cols="40" rows="6"></textarea>
-                        </div>
-                        <div class="todo__infor">
-                            <div class="todo__infor--field">
-                                <label for="">Due Date</label>
-                                <input type="date">
-                            </div>
-                            <div class="todo__infor--field">
-                                <label for="">Piority</label>
-                                <select name="piority" id="">
-                                    <option value="low">Low</option>
-                                    <option selected value="normal">Normal</option>
-                                    <option value="high">High</option>
-                                </select>
-                            </div>
-                        </div>
-                        <button class="button" id="btn-add">Update</button>
-                    </div>
-                    <div class="list__item">
-                        <input type="checkbox">
-                        <p>Do homework</p>
-                        <button class="button detail">Detail</button>
-                        <button class="button remove">Remove</button>
-                    </div>
+
                 </div>
             </div>
             <div class="footer">
                 <p>Bulk Action</p>
-                <button class="button detail">Done</button>
-                <button class="button remove">Remove</button>
+                <button class="button btn-detail">Done</button>
+                <button class="button btn-remove">Remove</button>
             </div>
         </div>
     </div>

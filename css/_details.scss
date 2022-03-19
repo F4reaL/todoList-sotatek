@@ -18,21 +18,21 @@
     font-size: 13px;
 }
 
-.todo__descipt {
+.task__descipt {
     margin-top: 10px;
     width: 90%;
-    .todo__descript--text {
+    .task__descript--text {
         width: 100%;
     }
 }
 
-.todo__infor {
+.task__infor {
     margin-top: 10px;
     width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    .todo__infor--field {
+    .task__infor--field {
         width: 45%;
         select {
             width: 100%;

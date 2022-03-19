@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #363434;
   height: 100vh;
   width: 100vw;
@@ -16,10 +16,14 @@ body {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 #newTask {
@@ -27,14 +31,16 @@ body {
   height: 100%;
   border-right: 1px solid black;
   position: relative;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 #todoList {
   width: 55%;
   height: 100%;
   position: relative;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 ::-webkit-scrollbar {
@@ -63,29 +69,39 @@ body {
   max-height: 75%;
   overflow-y: scroll;
   overflow-x: hidden;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding-left: 5%;
   margin-top: 30px;
 }
+
 .container label {
   font-weight: 1000;
   font-size: 11px;
 }
+
 .container .list {
   margin-top: 10px;
   width: 90%;
   height: 400px;
 }
-.container .list .list__item {
+
+.container .list .list__item .item {
   padding-left: 10px;
   height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: 1px solid black;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin-bottom: 15px;
 }
-.container .list .list__item p {
+
+.container .list .list__item .item p {
   margin-right: 100px;
   width: 150px;
   overflow: hidden;
@@ -98,11 +114,18 @@ body {
   bottom: 0;
   width: 100%;
   height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: #E0E0E0;
-  justify-content: end;
-  align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .footer p {
   position: absolute;
   left: 20px;
@@ -118,14 +141,14 @@ body {
   color: white;
 }
 
-.button.detail {
+.button.btn-detail {
   background-color: #00bcd4;
   margin-top: 0;
   margin-right: 15px;
   max-width: 100px;
 }
 
-.button.remove {
+.button.btn-remove {
   background-color: #D9534F;
   margin-top: 0;
   margin-right: 15px;
@@ -133,31 +156,34 @@ body {
 }
 
 input {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: 1px solid #aeaeb1;
 }
 
-input[type=date] {
+input[type='date'] {
   width: 100%;
   height: 30px;
 }
 
-input[type=text] {
+input[type="text"] {
   margin-top: 20px;
   padding-left: 20px;
   height: 30px;
   width: 90%;
 }
 
-input[type=text].error {
+input[type="text"].error {
   border: 1px solid red;
 }
 
-input[type=checkbox] {
-  box-sizing: border-box;
+input[type='checkbox'] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   outline: none;
   margin-right: 10px;
-  appearance: none;
+  -moz-appearance: none;
+       appearance: none;
   -webkit-appearance: none;
   height: 16px;
   min-width: 16px;
@@ -165,7 +191,7 @@ input[type=checkbox] {
   cursor: pointer;
 }
 
-input[type=checkbox]:checked {
+input[type='checkbox']:checked {
   background-image: url("../assets/icons8-done.svg");
   background-position: center center;
 }
@@ -190,28 +216,37 @@ input[type=checkbox]:checked {
   font-size: 13px;
 }
 
-.todo__descipt {
+.task__descipt {
   margin-top: 10px;
   width: 90%;
 }
-.todo__descipt .todo__descript--text {
+
+.task__descipt .task__descript--text {
   width: 100%;
 }
 
-.todo__infor {
+.task__infor {
   margin-top: 10px;
   width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-.todo__infor .todo__infor--field {
+
+.task__infor .task__infor--field {
   width: 45%;
 }
-.todo__infor .todo__infor--field select {
+
+.task__infor .task__infor--field select {
   width: 100%;
   height: 30px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
-
 /*# sourceMappingURL=style.css.map */

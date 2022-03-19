@@ -16,20 +16,22 @@
         width: 90%;
         height: 400px;
         .list__item {
-            padding-left: 10px;
-            height: 60px;
-            display: flex;
-            // justify-content: center;
-            align-items: center;
-            border: 1px solid black;
-            box-sizing: border-box;
-            margin-bottom: 15px;
-            p {
-                margin-right: 100px;
-                width: 150px;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
+            .item {
+                padding-left: 10px;
+                height: 60px;
+                display: flex;
+                // justify-content: center;
+                align-items: center;
+                border: 1px solid black;
+                box-sizing: border-box;
+                margin-bottom: 15px;
+                p {
+                    margin-right: 100px;
+                    width: 150px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
             }
         }
     }
