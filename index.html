@@ -21,7 +21,7 @@
             </div>
             <div class="container">
                 <div class="details">
-                    <input type="text" id="i-add" placeholder="Add new task ...">
+                    <input class="todo__title" type="text" id="i-add" placeholder="Add new task ...">
                     <div class="message">Vui lòng nhập trường này</div>
 
                     <div class="todo__descipt">
@@ -31,11 +31,11 @@
                     <div class="todo__infor">
                         <div class="todo__infor--field">
                             <label for="">Due Date</label>
-                            <input type="date">
+                            <input class="dueDate" type="date">
                         </div>
                         <div class="todo__infor--field">
                             <label for="">Piority</label>
-                            <select name="piority" id="">
+                            <select name="piority" class="piority">
                                 <option value="low">Low</option>
                                 <option selected value="normal">Normal</option>
                                 <option value="high">High</option>
@@ -62,7 +62,7 @@
 
                     </div>
                     <div class="details open">
-                        <input class="error" type="text" id="i-add" placeholder="Add new task ...">
+                        <input class="todo__title" class="error" type="text" id="i-update" placeholder="Change task ...">
                         <div class="message">Vui lòng nhập trường này</div>
                         <div class="todo__descipt">
                             <label for="">Desciption</label>
@@ -100,7 +100,7 @@
         </div>
     </div>
 
-    <!-- <script src="./js/combobox.js"></script> -->
+    <script src="./js/app.js"></script>
 </body>
 
 </html>
