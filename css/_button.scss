@@ -1,0 +1,23 @@
+.button {
+    margin-top: 40px;
+    width: 90%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: $button-color-1;
+    color: $text-color-2;
+}
+
+.button.detail {
+    background-color: $button-color-2;
+    margin-top: 0;
+    margin-right: 15px;
+    max-width: 100px;
+}
+
+.button.remove {
+    background-color: $button-color-3;
+    margin-top: 0;
+    margin-right: 15px;
+    max-width: 100px;
+}

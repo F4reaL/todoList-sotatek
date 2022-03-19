@@ -1,0 +1,14 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    background-color: $mess-color;
+    justify-content: end;
+    align-items: center;
+    p {
+        position: absolute;
+        left: 20px;
+    }
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <div id="newTask">
+            <div class="header">
+                <div class="title">New Task</div>
+            </div>
+            <div class="container">
+                <div class="details">
+                    <input type="text" id="i-add" placeholder="Add new task ...">
+                    <div class="message">Vui lòng nhập trường này</div>
+
+                    <div class="todo__descipt">
+                        <label for="">Desciption</label>
+                        <textarea class="todo__descript--text" name="Text1" cols="40" rows="10"></textarea>
+                    </div>
+                    <div class="todo__infor">
+                        <div class="todo__infor--field">
+                            <label for="">Due Date</label>
+                            <input type="date">
+                        </div>
+                        <div class="todo__infor--field">
+                            <label for="">Piority</label>
+                            <select name="piority" id="">
+                                <option value="low">Low</option>
+                                <option selected value="normal">Normal</option>
+                                <option value="high">High</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="button" id="btn-add">Add</button>
+                </div>
+
+            </div>
+        </div>
+        <div id="todoList">
+            <div class="header">
+                <div class="title">To Do List</div>
+            </div>
+            <div class="container">
+                <input type="text" id="i-search" placeholder="Search ...">
+                <div class="list">
+                    <div class="list__item">
+                        <input type="checkbox">
+                        <p>Do homeworkhomeworkhomeworkhomeworkhomeworkhomework</p>
+                        <button class="button detail">Detail</button>
+                        <button class="button remove">Remove</button>
+
+                    </div>
+                    <div class="details open">
+                        <input class="error" type="text" id="i-add" placeholder="Add new task ...">
+                        <div class="message">Vui lòng nhập trường này</div>
+                        <div class="todo__descipt">
+                            <label for="">Desciption</label>
+                            <textarea class="todo__descript--text" name="Text1" cols="40" rows="6"></textarea>
+                        </div>
+                        <div class="todo__infor">
+                            <div class="todo__infor--field">
+                                <label for="">Due Date</label>
+                                <input type="date">
+                            </div>
+                            <div class="todo__infor--field">
+                                <label for="">Piority</label>
+                                <select name="piority" id="">
+                                    <option value="low">Low</option>
+                                    <option selected value="normal">Normal</option>
+                                    <option value="high">High</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button class="button" id="btn-add">Update</button>
+                    </div>
+                    <div class="list__item">
+                        <input type="checkbox">
+                        <p>Do homework</p>
+                        <button class="button detail">Detail</button>
+                        <button class="button remove">Remove</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <p>Bulk Action</p>
+                <button class="button detail">Done</button>
+                <button class="button remove">Remove</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="./js/combobox.js"></script> -->
+</body>
+
+</html>
